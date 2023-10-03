@@ -1,8 +1,7 @@
-```markdown
 # Strategy Design Pattern in Java
 
 Strategy design pattern allows us to define a family of algorithms, encapsulate each one of them, and make them interchangeable. In this example, we'll implement different payment methods using the Strategy pattern.
-```
+
 ```
 public interface PaymentStrategy {
     void pay(int amount);
