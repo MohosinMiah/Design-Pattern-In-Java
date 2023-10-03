@@ -84,4 +84,3 @@ When you run the `BeverageTest` class, it will create instances of `Coffee` and 
 This allows you to follow a common template for beverage preparation while allowing flexibility to customize certain steps for each type of beverage.
 
 You can use this pattern to create reusable and extensible algorithms in your Java applications.
-```
