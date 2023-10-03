@@ -6,6 +6,10 @@ public interface State {
     void turnOff();
 }
 
+```
+
+```
+
 public class OnState implements State {
     @Override
     public void turnOn() {
@@ -18,6 +22,10 @@ public class OnState implements State {
     }
 }
 
+```
+
+```
+
 public class OffState implements State {
     @Override
     public void turnOn() {
@@ -29,6 +37,10 @@ public class OffState implements State {
         System.out.println("The light is already off.");
     }
 }
+
+```
+
+```
 
 public class LightSwitch {
     private State state;
@@ -49,6 +61,11 @@ public class LightSwitch {
         state.turnOff();
     }
 }
+
+```
+
+```
+
 
 public class Main {
     public static void main(String[] args) {
