@@ -77,10 +77,14 @@ public enum RequestType {
 
 public class Client {
     public static void main(String[] args) {
+        
         Handler handler1 = new ConcreteHandler1();
         Handler handler2 = new ConcreteHandler2();
+        Handler handler3 = new ConcreteHandler3();
 
+        // Set the next handler for each handler in the chain
         handler1.setNextHandler(handler2);
+        handler2.setNextHandler(handler3);
 
         Request request1 = new Request(RequestType.TYPE1);
         handler1.handleRequest(request1);
