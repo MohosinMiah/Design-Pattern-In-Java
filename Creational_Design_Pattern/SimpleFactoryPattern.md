@@ -1,4 +1,4 @@
-## The Simple Factory design pattern is a creational design pattern that provides an interface for creating objects but hides the details of their instantiation. It typically involves a factory class with a method for creating objects based on certain conditions or parameters.
+# The Simple Factory design pattern is a creational design pattern that provides an interface for creating objects but hides the details of their instantiation. It typically involves a factory class with a method for creating objects based on certain conditions or parameters.
 
 ```
 interface Product {
