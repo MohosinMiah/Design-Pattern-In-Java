@@ -3,6 +3,7 @@
 
 
 ```
+// Define the Pizza class:
 
 public class Pizza {
     private String dough;
@@ -73,6 +74,7 @@ public class Pizza {
 ```
 
 ```
+// Create a client program to build different types of pizzas:
 
 public class PizzaBuilderExample {
     public static void main(String[] args) {

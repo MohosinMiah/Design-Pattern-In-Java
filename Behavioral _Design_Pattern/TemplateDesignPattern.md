@@ -27,7 +27,6 @@ public abstract class Beverage {
 }
 ```
 
-
 ```
 public class Coffee extends Beverage {
     @Override

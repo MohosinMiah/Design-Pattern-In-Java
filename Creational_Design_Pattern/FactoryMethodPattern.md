@@ -13,7 +13,10 @@ interface Document {
 ```
 
 ```
+
 // Concrete documents
+// Define a Document interface and its concrete implementations:
+
 class TextDocument implements Document {
     @Override
     public void open() {
@@ -34,6 +37,7 @@ class TextDocument implements Document {
 ```
 
 ```
+// Define a Document interface and its concrete implementations:
 
 class PDFDocument implements Document {
     @Override
@@ -56,7 +60,7 @@ class PDFDocument implements Document {
 
 ```
 
-// Abstract creator
+// Abstract creator : Create an abstract DocumentCreator class with a factory method:
 abstract class DocumentCreator {
     public abstract Document createDocument();
 }
@@ -64,7 +68,8 @@ abstract class DocumentCreator {
 ```
 
 ```
-// Concrete creators
+// Define concrete creator classes that implement the factory method:
+
 class TextDocumentCreator extends DocumentCreator {
     @Override
     public Document createDocument() {
@@ -75,6 +80,8 @@ class TextDocumentCreator extends DocumentCreator {
 ```
 
 ```
+// Define concrete creator classes that implement the factory method:
+
 class PDFDocumentCreator extends DocumentCreator {
     @Override
     public Document createDocument() {
@@ -85,7 +92,7 @@ class PDFDocumentCreator extends DocumentCreator {
 ```
 
 ```
-
+// Use the concrete creators to create documents in your client code:
 public class Client {
     public static void main(String[] args) {
         DocumentCreator textDocumentCreator = new TextDocumentCreator();
