@@ -10,6 +10,18 @@ public interface OldSystem {
 ```
 
 ```
+
+public class OldSystemImpl implements OldSystem {
+    @Override
+    public void request() {
+        System.out.println("OldSystemImpl is processing the request.");
+    }
+}
+
+```
+
+
+```
 public interface NewSystem {
     void newRequest();
 }
