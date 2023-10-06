@@ -11,7 +11,7 @@ interface PizzaFactory {
 ```
 
 ```
-// Abstract Product: Pizza
+// Abstract Product  Pizza
 interface Pizza {
     void prepare();
     void bake();
@@ -23,7 +23,7 @@ interface Pizza {
 
 ```
 
-// Concrete Product: MargheritaPizza
+// Concrete Product  MargheritaPizza
 class MargheritaPizza implements Pizza {
     @Override
     public void prepare() {
@@ -50,7 +50,7 @@ class MargheritaPizza implements Pizza {
 
 ```
 
-// Concrete Product: PepperoniPizza
+// Concrete Product  PepperoniPizza
 class PepperoniPizza implements Pizza {
     @Override
     public void prepare() {
@@ -77,7 +77,7 @@ class PepperoniPizza implements Pizza {
 
 ```
 
-// Concrete Factory: MargheritaPizzaFactory
+// Concrete Factory  MargheritaPizzaFactory
 class MargheritaPizzaFactory implements PizzaFactory {
     @Override
     public Pizza createPizza() {
@@ -89,7 +89,7 @@ class MargheritaPizzaFactory implements PizzaFactory {
 
 ```
 
-// Concrete Factory: PepperoniPizzaFactory
+// Concrete Factory  PepperoniPizzaFactory
 class PepperoniPizzaFactory implements PizzaFactory {
     @Override
     public Pizza createPizza() {
@@ -100,7 +100,7 @@ class PepperoniPizzaFactory implements PizzaFactory {
 ```
 
 ```
-// Use the PizzaFactory to create and process different types of pizzas:
+// Use the PizzaFactory to create and process different types of pizzas 
 public class PizzaShop {
     public static void main(String[] args) {
         PizzaFactory margheritaFactory = new MargheritaPizzaFactory();
@@ -109,13 +109,13 @@ public class PizzaShop {
         PizzaFactory pepperoniFactory = new PepperoniPizzaFactory();
         Pizza pepperoniPizza = pepperoniFactory.createPizza();
 
-        System.out.println("Margherita Pizza:");
+        System.out.println("Margherita Pizza ");
         margheritaPizza.prepare();
         margheritaPizza.bake();
         margheritaPizza.cut();
         margheritaPizza.box();
 
-        System.out.println("\nPepperoni Pizza:");
+        System.out.println("\nPepperoni Pizza ");
         pepperoniPizza.prepare();
         pepperoniPizza.bake();
         pepperoniPizza.cut();

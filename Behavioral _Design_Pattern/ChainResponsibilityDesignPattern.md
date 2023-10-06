@@ -1,7 +1,7 @@
 # The Chain of Responsibility design pattern is a behavioral design pattern that allows you to pass requests along a chain of handlers. Each handler decides either to process the request or pass it to the next handler in the chain. 
 
 ```
-// Define the Handler interface:
+// Define the Handler interface 
 
 public interface Handler {
     void setNextHandler(Handler nextHandler);
@@ -11,7 +11,7 @@ public interface Handler {
 ```
 
 ```
-// Create concrete handler classes that implement the Handler interface:
+// Create concrete handler classes that implement the Handler interface 
 
 public class ConcreteHandler1 implements Handler {
     private Handler nextHandler;
@@ -31,7 +31,7 @@ public class ConcreteHandler1 implements Handler {
     }
 }
 
-// Create concrete handler classes that implement the Handler interface:
+// Create concrete handler classes that implement the Handler interface 
 
 public class ConcreteHandler2 implements Handler {
     private Handler nextHandler;
@@ -54,7 +54,7 @@ public class ConcreteHandler2 implements Handler {
 ```
 
 ```
-// Create a Request class:
+// Create a Request class 
 
 public class Request {
     private RequestType type;
@@ -71,7 +71,7 @@ public class Request {
 ```
 
 ```
-// Define an enum for request types:
+// Define an enum for request types 
 
 public enum RequestType {
     TYPE1, TYPE2, TYPE3
@@ -80,7 +80,7 @@ public enum RequestType {
 ```
 
 ```
-// Create a client class to demonstrate the Chain of Responsibility:
+// Create a client class to demonstrate the Chain of Responsibility 
 
 public class Client {
     public static void main(String[] args) {

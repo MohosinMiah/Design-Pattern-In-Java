@@ -1,7 +1,7 @@
 # The State pattern allows an object to alter its behavior when its internal state changes.
 
 ```
-// Define the State interface:
+// Define the State interface 
 
 public interface State {
     void turnOn();
@@ -11,7 +11,7 @@ public interface State {
 ```
 
 ```
-// Create concrete state classes that implement the State interface:
+// Create concrete state classes that implement the State interface 
 
 public class OnState implements State {
     @Override
@@ -28,7 +28,7 @@ public class OnState implements State {
 ```
 
 ```
-// Create concrete state classes that implement the State interface:
+// Create concrete state classes that implement the State interface 
 
 public class OffState implements State {
     @Override
@@ -45,7 +45,7 @@ public class OffState implements State {
 ```
 
 ```
-// Create a context class (LightSwitch) that maintains the current state:
+// Create a context class (LightSwitch) that maintains the current state 
 
 public class LightSwitch {
     private State state;
@@ -70,7 +70,7 @@ public class LightSwitch {
 ```
 
 ```
-// Create a Main class to test the LightSwitch:
+// Create a Main class to test the LightSwitch 
 
 public class Main {
     public static void main(String[] args) {

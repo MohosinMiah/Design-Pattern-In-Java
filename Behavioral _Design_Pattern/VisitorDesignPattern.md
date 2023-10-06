@@ -1,7 +1,7 @@
 # The Visitor design pattern is a behavioral design pattern that allows you to add new behaviors to existing classes without altering their code.
 
 ```
-// Define the Shape interface:
+// Define the Shape interface 
 
 public interface Shape {
     void accept(Visitor visitor);
@@ -10,7 +10,7 @@ public interface Shape {
 ```
 
 ```
-// Create concrete shape classes that implement the Shape interface:
+// Create concrete shape classes that implement the Shape interface 
 
 public class Circle implements Shape {
     private double radius;
@@ -55,7 +55,7 @@ public class Rectangle implements Shape {
 ```
 
 ```
-// Define the Visitor interface:
+// Define the Visitor interface 
 
 public interface Visitor {
     void visit(Circle circle);
@@ -65,7 +65,7 @@ public interface Visitor {
 ```
 
 ```
-// Create concrete visitor classes that implement the Visitor interface for calculating area and perimeter:
+// Create concrete visitor classes that implement the Visitor interface for calculating area and perimeter 
 
 public class AreaCalculator implements Visitor {
     private double totalArea = 0;
@@ -88,7 +88,7 @@ public class AreaCalculator implements Visitor {
 ``` 
 
 ```
-// Create concrete visitor classes that implement the Visitor interface for calculating area and perimeter:
+// Create concrete visitor classes that implement the Visitor interface for calculating area and perimeter 
 
 public class PerimeterCalculator implements Visitor {
     private double totalPerimeter = 0;
@@ -111,7 +111,7 @@ public class PerimeterCalculator implements Visitor {
 ```
 
 ```
-// Create a client to demonstrate the Visitor pattern:
+// Create a client to demonstrate the Visitor pattern 
 
 public class Client {
     public static void main(String[] args) {
@@ -127,8 +127,8 @@ public class Client {
         circle.accept(perimeterCalculator);
         rectangle.accept(perimeterCalculator);
 
-        System.out.println("Total Area: " + areaCalculator.getTotalArea()); // Output: Total Area: 74.53981633974483
-        System.out.println("Total Perimeter: " + perimeterCalculator.getTotalPerimeter()); // Output: Total Perimeter: 32.84955592153876
+        System.out.println("Total Area  " + areaCalculator.getTotalArea()); // Output  Total Area  74.53981633974483
+        System.out.println("Total Perimeter  " + perimeterCalculator.getTotalPerimeter()); // Output  Total Perimeter  32.84955592153876
     }
 }
 

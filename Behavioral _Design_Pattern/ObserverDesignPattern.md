@@ -34,7 +34,7 @@ class WeatherStation implements Subject {
 
     @Override
     public void notifyObservers() {
-        for (Observer observer : observers) {
+        for (Observer observer   observers) {
             observer.update(temperature);
         }
     }

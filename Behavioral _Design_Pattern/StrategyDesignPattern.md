@@ -3,7 +3,7 @@
 Strategy design pattern allows us to define a family of algorithms, encapsulate each one of them, and make them interchangeable. In this example, we'll implement different payment methods using the Strategy pattern.
 
 ```
-// Define the PaymentStrategy interface:
+// Define the PaymentStrategy interface 
 
 public interface PaymentStrategy {
     void pay(int amount);
@@ -11,7 +11,7 @@ public interface PaymentStrategy {
 ```
 
 ```
-// Create concrete payment strategy classes that implement the PaymentStrategy interface:
+// Create concrete payment strategy classes that implement the PaymentStrategy interface 
 
 public class CreditCardPayment implements PaymentStrategy {
     private String cardNumber;
@@ -24,11 +24,11 @@ public class CreditCardPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paid " + amount + " using credit card: " + cardNumber);
+        System.out.println("Paid " + amount + " using credit card  " + cardNumber);
     }
 }
 
-// Create concrete payment strategy classes that implement the PaymentStrategy interface:
+// Create concrete payment strategy classes that implement the PaymentStrategy interface 
 
 public class PayPalPayment implements PaymentStrategy {
     private String email;
@@ -39,11 +39,11 @@ public class PayPalPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paid " + amount + " using PayPal account: " + email);
+        System.out.println("Paid " + amount + " using PayPal account  " + email);
     }
 }
 
-// Create concrete payment strategy classes that implement the PaymentStrategy interface:
+// Create concrete payment strategy classes that implement the PaymentStrategy interface 
 
 public class BitcoinPayment implements PaymentStrategy {
     private String bitcoinAddress;
@@ -54,14 +54,14 @@ public class BitcoinPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paid " + amount + " using Bitcoin address: " + bitcoinAddress);
+        System.out.println("Paid " + amount + " using Bitcoin address  " + bitcoinAddress);
     }
 }
 
 ```
 
 ```
-// Create a ShoppingCart class that uses the selected payment strategy:
+// Create a ShoppingCart class that uses the selected payment strategy 
 
 public class ShoppingCart {
     private List<Item> items;
@@ -76,7 +76,7 @@ public class ShoppingCart {
 
     public int calculateTotal() {
         int total = 0;
-        for (Item item : items) {
+        for (Item item   items) {
             total += item.getPrice();
         }
         return total;
@@ -91,7 +91,7 @@ public class ShoppingCart {
 ```
 
 ```
-// Create an example application to demonstrate how the Strategy pattern works:
+// Create an example application to demonstrate how the Strategy pattern works 
 
 public class Main {
     public static void main(String[] args) {

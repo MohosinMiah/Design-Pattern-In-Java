@@ -48,8 +48,8 @@ public class Client {
         Product productA = ProductFactory.createProduct("A");
         Product productB = ProductFactory.createProduct("B");
 
-        productA.getDescription(); // Output: This is product A.
-        productB.getDescription(); // Output: This is product B.
+        productA.getDescription(); // Output  This is product A.
+        productB.getDescription(); // Output  This is product B.
     }
 }
 

@@ -1,7 +1,7 @@
 # The Bridge design pattern is a structural design pattern that is used to separate an abstraction (high-level interface or component) from its implementation (low-level details or concrete implementation). It allows these two parts to vary independently, which promotes flexibility, maintainability, and extensibility in your code.
 
 ```
-// Define the abstraction (high-level interface):
+// Define the abstraction (high-level interface) 
 
 public interface RemoteControl {
     void powerOn();
@@ -13,7 +13,7 @@ public interface RemoteControl {
 ```
 
 ```
-// Create concrete implementations of the abstraction:
+// Create concrete implementations of the abstraction 
 
 public class TVRemoteControl implements RemoteControl {
     private Device device;
@@ -46,7 +46,7 @@ public class TVRemoteControl implements RemoteControl {
 ```
 
 ```
-// Create concrete implementations of the abstraction:
+// Create concrete implementations of the abstraction 
 
 public class RadioRemoteControl implements RemoteControl {
     private Device device;
@@ -79,7 +79,7 @@ public class RadioRemoteControl implements RemoteControl {
 ```
 
 ```
-// Define the implementation interface:
+// Define the implementation interface 
 
 public interface Device {
     void powerOn();
@@ -91,7 +91,7 @@ public interface Device {
 ```
 
 ```
-// Create concrete implementations of the implementation:
+// Create concrete implementations of the implementation 
 
 public class Television implements Device {
     private boolean isOn = false;
@@ -129,7 +129,7 @@ public class Television implements Device {
 ```
 
 ```
-// Create concrete implementations of the implementation:
+// Create concrete implementations of the implementation 
 
 public class Radio implements Device {
     private boolean isOn = false;

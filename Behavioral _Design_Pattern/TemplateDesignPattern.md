@@ -60,10 +60,10 @@ public class BeverageTest {
         Beverage coffee = new Coffee();
         Beverage tea = new Tea();
 
-        System.out.println("Making coffee:");
+        System.out.println("Making coffee ");
         coffee.prepareBeverage();
 
-        System.out.println("\nMaking tea:");
+        System.out.println("\nMaking tea ");
         tea.prepareBeverage();
     }
 }

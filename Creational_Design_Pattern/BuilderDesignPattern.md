@@ -3,7 +3,7 @@
 
 
 ```
-// Define the Pizza class:
+// Define the Pizza class 
 
 public class Pizza {
     private String dough;
@@ -63,9 +63,9 @@ public class Pizza {
     @Override
     public String toString() {
         return "Pizza with " + dough + " dough, " + sauce + " sauce, " + cheese + " cheese, " +
-                (pepperoni ? "with pepperoni, " : "") +
-                (mushrooms ? "with mushrooms, " : "") +
-                (onions ? "with onions, " : "") +
+                (pepperoni ? "with pepperoni, "   "") +
+                (mushrooms ? "with mushrooms, "   "") +
+                (onions ? "with onions, "   "") +
                 "baked to perfection!";
     }
 }
@@ -74,7 +74,7 @@ public class Pizza {
 ```
 
 ```
-// Create a client program to build different types of pizzas:
+// Create a client program to build different types of pizzas 
 
 public class PizzaBuilderExample {
     public static void main(String[] args) {
