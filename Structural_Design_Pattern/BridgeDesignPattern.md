@@ -167,7 +167,9 @@ public class Radio implements Device {
 ```
 
 ```
-// public class Client {
+//  Bridge pattern to control different devices with different remote controls
+
+public class Client {
     public static void main(String[] args) {
         Device tv = new Television();
         Device radio = new Radio();
